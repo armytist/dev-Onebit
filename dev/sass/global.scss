@@ -1,0 +1,199 @@
+body {
+    background-color: $background;
+    color: $text;
+    font-size: $font-size;
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $titles;
+}
+
+h1 {
+    font-size: 58px;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 34px;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 20px;
+}
+
+h6 {
+font-size: 20px;
+line-height: 34px;
+}
+
+a {
+    color: $accent;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.color-list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 12px;
+    color: $titles;
+}
+.background-color {
+    background-color: $background;
+}
+
+.system-color {
+    background-color: $system;
+}
+
+.strokes-color {
+    background-color: $strokes;
+}
+
+.body-text-color {
+    background-color: $text;
+}
+
+.titles-color {
+    background-color: $titles;
+}
+
+.accent-color {
+    background-color: $accent;
+}
+
+.accent-hover-color {
+    background-color: $accent-hover;
+}
+
+.accent-second-color {
+    background-color: $accent-2;
+}
+
+.errors-color {
+    background-color: $errors;
+}
+
+.button-status {
+    background-color: $button-status;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid $strokes;
+    font-size: 18px;
+    font-weight: 600;
+    color: $titles;
+    padding: 7px 48px 11px;
+    border-radius: 5px;
+
+    &.btn-primary {
+        background-color: $accent;
+        color: $system;
+        border-color: $accent;
+        &:hover, &:active {
+            background-color: $accent-hover;
+            border-color: $accent-hover;
+    
+        }
+        &:active, &:focus, &:not(.btn-check)+.btn-active {
+            color: $titles;
+        }
+    }
+
+    &.btn-secondary {
+        @extend .btn-primary;
+        background-color: transparent;
+        border-color: $strokes;
+        color: $titles;
+        &:hover, &:focus, &:active, &:not(.btn-check)+.btn-active {
+            color: $system;
+            background-color: $accent-hover;
+            border-color: $accent-hover;
+        }
+    }
+
+    &.btn-lg {
+        border-radius: 8px;
+        padding: 25px 94px 28px;
+    }
+
+    &.btn-profile {
+        padding: 8px 8px;
+        border-radius: 8px;
+        height: 56px;
+        width: 56px;
+        position: relative;
+
+        &:hover {
+            border-color: $text;
+        }
+
+        &.verified, &.not-verified {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                right: -6px;
+                top: -6px;
+                border-radius: 50%;
+                background-color: $accent;
+            }
+        }
+
+        &.not-verified {
+            &:before {
+                background-color: $errors;
+            }
+        } 
+
+        svg {
+            width: 18px;
+            height: 17px;
+        }
+    }
+
+   
+    &.btn-profile.not-verified
+    &:focus-visible {
+        box-shadow: none;
+    }
+
+    &:not(.btn-check)+.btn:active {
+        color: $titles;
+        border-color: $accent-hover;
+        background-color: $accent-hover;
+    }
+}
+
+::selection {
+    color: $system;
+    background-color: $accent;
+}
+
+
+
