@@ -1,16 +1,3 @@
-label {
-    font-size: 20px;
-}
-
-input {
-    &::-webkit-outer-spin-button, 
-    &::-webkit-inner-spin-button {
-    display: none;
-    -webkit-appearance: none;
-    margin: 0;
-    }
-}
-
 .column-logo {
     width: 300px;
     background-color: $accent;
@@ -21,26 +8,89 @@ input {
     padding: 40px;
 }
 
-.input-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    width: 100%;
+label {
+    font-size: 20px;
+}
+
+input {
+    background-color: $system;
+    border: 1px solid $strokes;
+    border-radius: 8px;
+    color: $titles;
+    font-size: 20px;
+    padding: 26.5px 30px;
+    &::-webkit-outer-spin-button, 
+    &::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    
+
+    &:hover,
+    &:focus, 
+    &:focus-visible,
+    &:active {
+        border-color: $text;
+    }
+
+    &:focus, 
+    &:focus-visible {
+        box-shadow: none;
+        outline: none;
+    }
 }
 
 form {
     padding: 0 12px;
     max-width: 729px;
-}
+} 
 
 .template-form {
     padding: 0 12px;
     max-width: 729px;
+    position: relative;
+    .btn-profile {
+        position: absolute;
+        left: -79px;
+        top: 0;
+
+    }
+
+    &_title {
+        margin-bottom: 20px;
+    }
+
+    &_subtitle {
+        margin-bottom: 40px;
+        color: $text;
+    }
+
+    .btn-row {
+        margin-bottom: 40px;
+        .btn {
+            width: 100%;
+        }
+    }
+
+    &__question {
+        max-width: 471px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 .page-login {
     .template-form {
         margin: 100px auto;
+        .template-form_title {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -48,3 +98,64 @@ form {
     display: flex;
     gap: 30px;
 }
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    label {
+        position: absolute;
+        left: 30px;
+        top: 26.5px;
+    }
+}
+
+.conrol-box {
+    label {
+        position: relative;
+        padding: 40px;
+        font-size: 16px;
+    }
+
+    input {
+        display: none;
+    }
+
+    input + label {
+            &::before {
+                content: "";
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 0;
+                background-color: $system;
+                border: 1px solid $strokes;
+                border-radius: 4px;
+            }
+        }
+    input + label {
+        &:checked, 
+        &:hover {
+            &::before {
+                border-color: $accent;
+                background-color: $conroll-btn-bg;
+            }
+        }
+    }
+    input + label {
+        &:checked {
+            &::before {
+                background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L5 8L12 1' stroke='%23B1FF5C' stroke-width='2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
+
+
+
+
+
