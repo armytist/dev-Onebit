@@ -13,6 +13,7 @@ label {
 }
 
 input {
+    width: 100%;
     background-color: $system;
     border: 1px solid $strokes;
     border-radius: 8px;
@@ -157,6 +158,20 @@ form {
             }
         }
     }
+}
+
+.hideShowPassword-toggle {
+background: url(./assets/img/eye.svg) center/contain no-repeat transparent;
+cursor: pointer;
+width: 24px;
+font-size: 0;
+height: 24px;
+transform: translate(-30px, 0);
+border: none;
+}
+
+.hideShowPassword-toggle-hide {
+    background: url(./assets/img/icon-eye-active.svg) center/contain no-repeat;
 }
 
 
