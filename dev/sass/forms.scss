@@ -1,5 +1,5 @@
 .column-logo {
-    width: 300px;
+    width: 333px;
     background-color: $accent;
     height: 100vh;
     position: fixed;
@@ -53,18 +53,18 @@ form {
 } 
 
 .template-form {
-    padding: 0 12px;
-    max-width: 729px;
+    padding: 0 86px 0 12px;
+    max-width: 803px;
     position: relative;
     .btn-profile {
         position: absolute;
-        left: -79px;
-        top: 0;
+        left: -111px;
+        top: 3px;
 
     }
 
     &_title {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
     }
 
     &_subtitle {
@@ -87,12 +87,13 @@ form {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        font-size: 20px;
     }
 }
 
 .page-login {
     .template-form {
-        margin: 100px auto;
+        margin: 97px auto 100px 596px;
         .template-form_title {
             margin-bottom: 20px;
         }
@@ -118,6 +119,7 @@ form {
 }
 
 .conrol-box {
+    margin: 42px 0;
     label {
         position: relative;
         padding: 40px;
@@ -135,6 +137,8 @@ form {
                 height: 26px;
                 position: absolute;
                 left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
                 background-color: $system;
                 border: 1px solid $strokes;
                 border-radius: 4px;
