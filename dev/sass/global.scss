@@ -8,6 +8,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: $titles;
+    font-weight: 600;
 }
 
 h1 {
@@ -48,13 +49,17 @@ a {
     }
 }
 
+section {
+    padding-bottom: $section-padding;
+}
+
 .container {
     max-width: 1464px;
 }
 
 .color-list {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 12px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -147,7 +152,7 @@ a {
 
     &.btn-lg {
         border-radius: 8px;
-        padding: 25px 94px 28px;
+        padding: 43px 94px 47px;
     }
 
     &.btn-profile {
@@ -283,15 +288,38 @@ a {
     border-radius: 5px;
 }
 
+.scroll::-webkit-scrollbar {
+    margin: 5px;
+    width: 4px;
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    background-clip: padding-box;
+    border: 0px solid #242424;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $accent-hover;
+        cursor: pointer;
+    }
+}
+
+.scroll::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #242424;
+    cursor: pointer;
+}
+
+.scroll::-webkit-scrollbar-corner {
+    margin-right: 100px;
+}
+
 .scroll {
     scrollbar-color: $accent #242424;
     padding-right: 8px;
     overflow: auto;
-}
-
-::selection {
-    color: $system;
-    background-color: $accent;
 }
 
 .social-nav {
@@ -305,6 +333,22 @@ a {
     height: 50px;
     background-color: $icon-color;
     border-radius: 8px;
+}
+
+.col-lg-6.col-xl-4 {
+    .scroll-x {
+        min-height: 300px;
+        width: 400px;
+    }
+}
+
+.scroll {
+    overflow-x: auto;
+}
+
+::selection {
+    color: $system;
+    background-color: $accent;
 }
 
 

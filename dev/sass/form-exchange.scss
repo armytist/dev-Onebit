@@ -1,0 +1,166 @@
+.form-exchange {
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid $strokes;
+    max-width: 540px;
+    position: relative;
+    background: $background;
+
+    .give {
+        margin-bottom: 30px;
+    }
+
+    .get {
+        margin-bottom: 15px;
+    }
+
+    .input-row {
+        background-color: $system;
+        border-radius: 12px;
+        color: $titles;
+        font-size: 24px;
+        padding: 35px;
+        width: 100%;
+        border: 1px solid $strokes;
+        gap: 15px;
+        align-items: center;
+    }
+
+    label {
+        margin-bottom: 23px;
+        line-height: 1;
+    }
+
+    input {
+        border: none;
+        padding: 11.5px 30px;
+    }
+
+    .exchange-info {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 42px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px; 
+    }
+    .exchange-info-item {
+        width: calc(50%-24px);
+    }
+
+    .btn-lg {
+        width: 100%;
+        font-size: 24px;
+    }
+   
+}
+
+
+
+.nice-select {
+    border: 1px solid $strokes;
+    background-color: $system;
+    padding: 16px 20px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    min-height: 201px;
+    &:after {
+        border-bottom: 2px solid $text;
+        border-right: 2px solid $text;
+        height: 10px;
+        right: 20%;
+        top: 50%;
+        width: 10px;
+        margin-top: -7px;
+    }
+}
+
+.nice-select {
+    .nice-select-dropdown {
+        background: $system;
+        border: 1px solid $strokes;
+    } 
+
+    .nice-select-search-box {
+        padding: 13px 24px;
+    }
+
+    .nice-select-search {
+        background-color: $system;
+        border: 1px solid $text;
+        color: $titles;
+    }
+
+    .list {
+        max-height: 320px;
+        margin: 0;
+        @extend .scroll
+    }
+
+    .option:hover,
+    .option.focus,
+    .option.selected.focus {
+        background-color: $text;
+        background: $conroll-btn-bg;
+    }
+
+    .option {
+        display: flex;
+        gap: 32px;
+        color: $titles;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 12px 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 24px;
+            right: 24px;
+            top: 0;
+            border-bottom: 1px solid $light-black;
+        }
+
+        &:first-child {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.exchange-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 42px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &-item {
+        width: calc(50%-24px);
+        text-decoration: none;
+    }
+
+    &__title {
+        color: $strokes;
+        font-size: 20px;
+    }
+    
+    &__value {
+        font-size: 20px;
+        color: $accent;
+    }
+}
+
+.exchange-info_row {
+    .exchange-info-item {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+}

@@ -5,6 +5,9 @@ $(document).ready(function(){
     });
 })
 
+NiceSelect.bind(document.getElementById("choice-give-currency"))
+NiceSelect.bind(document.getElementById("choice-get-currency"))
+
 /*const btnHistoryBack= document.querySelector('#history-back');
 const backHistory =()=> window.history.back();
 btnHistoryBack.addEventListener('click', backHistory);*/
