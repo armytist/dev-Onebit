@@ -1,5 +1,4 @@
 @@include('templates/head.html')
-@@include('templates/header.html')
 <main class="wrapper page-login">
     <div class="column-logo">
         <img src="assets/img/Group.svg" alt="logo">
@@ -14,12 +13,12 @@
         <h3 class="template-form_title">увійти в акаунт</h3>
         <h6 class="template-form_subtitle">Для успішного входу в особистий кабінет заповніть поля, які вказані нижче</h6>
         <div class="input-box">
-            <label for="email">email</label>
-            <input id="email" type="email">
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="email">
         </div>
         <div class="input-box">
             <label for="password"></label>
-            <input id="password" type="password">
+            <input id="password" type="password" placeholder="пароль">
         </div>
         <div class="btn-row">
             <button type="submit" class="btn btn-primary btn-lg">увійти в акаунт</button>
@@ -33,5 +32,5 @@
         </div>
     </form>
 </main>
-@@include('templates/footer.html')
+@@include('templates/footer-assets.html')
  

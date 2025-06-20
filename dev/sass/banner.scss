@@ -1,29 +1,53 @@
 .banner {
     padding-top: 40px;  
+    overflow: hidden;
+    padding-bottom: 250px + 150px;
     > .container {
         display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    + section {
+        margin-top: -150px; 
+    }
+
+    .banner-col {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &-text {
         max-width: 750px;
         margin-bottom: 80px;
+        margin-top: auto;
     }
 
     &-title {
         margin-bottom: 30px;
+        white-space: pre-line;
     }
 
     &-subtitle {
         font-weight: 400;
         color: $text;
+        white-space: pre-line;
+
+        &.crypto-pairs {
+            margin-bottom: 40px;
+        }
     }
 
     &-advantages {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px 50px;
+        gap: 45px 50px;
         max-width: 790px;
         margin-bottom: 80px;
+        margin-top: -4px;
+        white-space: pre-line;
     }
 
     &-advantages-item {
@@ -33,6 +57,7 @@
         font-size: 18px;
         font-weight: 600;
         gap: 20px;
+        
     }
 
     &-link {
@@ -41,18 +66,46 @@
 
         svg {
             width: 12px;
-            height: 16px;
-            margin-left: 3px;
+            height: 12px;
+            margin-left: 11px;
             transition: .3s;
 
         }
         &:hover {
             svg {
-                transform: rotate(-90deg);
+                transform: rotate(90deg);
             }
         } 
     }
+
+    .img-fluid {
+        max-width: 665px;
+        max-height: 665px;
+        margin-left: 30px;
+    }
+
+    .form-exchange {
+        border: none;
+    }
+
+    &__btn-row {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
 }
-select {
-    background-color: green($color: #000000);
+
+.form-light {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
+
+.page-home {
+    .banner-text {
+        margin-top: initial;
+    }
+}
+

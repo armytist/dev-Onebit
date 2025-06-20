@@ -45,11 +45,13 @@ footer {
             color: $accent;
         }
     }
+
+    .icon {
+        color: $accent;
+    }
 }
 
-.icon {
-    color: $accent;
-}
+
 
 .copyright-nav {
     margin-left: auto;
@@ -68,6 +70,7 @@ footer {
     font-weight: 600;
     padding: 38px 12px;
     position: relative;
+    color: $strokes;
 }
 
 .container.copyright::before {

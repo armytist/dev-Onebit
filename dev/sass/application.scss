@@ -1,0 +1,57 @@
+.application {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+        .template-form {
+            &_title {
+                margin-top: 40px;
+                white-space: pre-line;
+                margin-bottom: 60px;
+            }
+
+            &_subtitle {
+                color: $strokes;
+                font-weight: 400;
+
+               // &::after {
+                ///    content: "";
+                //    position: absolute;
+                //    left: 12px;
+                //    right: 12px;
+                //    top: 0;
+                //    border-top: 1px solid $light-black;
+               // }
+            }
+
+            .select-country-city::after {
+          
+                    border-bottom: 2px solid $text;
+                    border-right: 2px solid $text;
+                    height: 10px;
+                    width: 10px;
+                    right: 24px;
+                    top: 50%;
+                    margin-top: -7px;
+            }
+
+        }
+        .forms {
+            margin-top: 200px;
+
+            .column-world {
+                display: flex;
+               flex-direction: column;
+               gap: 1px;
+            }
+
+            .apppl {
+                margin-right: 136px;
+            }
+
+            .appl {
+                margin-right: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+
+
+.services-list {
+    --services-list-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--services-list-gap);
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    background-color: $system;
+    padding: 40px 50px 30px;
+    border-radius: 16px;
+    width: calc(50% - var(--services-list-gap) / 2);
+    &:first-child {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    &__description {
+        margin-bottom: 40px;
+        font-size: 20px;
+        color: $text;
+        font-weight: 400;
+    }
+    &__link {
+        @extend .banner-link;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    &__picture {
+       img {
+        width: 100%;
+        height: auto;
+       }
+    }
+}
+
+

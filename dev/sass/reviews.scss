@@ -1,0 +1,57 @@
+.reviews {
+    .container {
+       .template-title {
+      margin-left: 0;
+      display: flex;
+      align-items: flex-start;
+        white-space: pre-line;
+        text-align: left;
+       }
+
+       .review-list {
+         gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        
+       }
+        .review-item {
+            padding: 40px 50px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            background-color: $system;
+            max-width: 705px;
+            max-height: 499px;
+
+            &__title {
+                margin-bottom: 20px;
+            }
+
+            &__description {
+                color: $strokes;
+                font-weight: 400;
+                margin-bottom: 40px;
+            }
+        }
+        .review-date {
+            color: $strokes;
+            white-space: nowrap;
+            font-size: 18px;
+        }
+
+        .review-info {
+            flex-direction: row;
+      
+        }
+
+        .reviews-btn {
+            width: 180px;
+            height: 47px;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 9px 20px;
+           white-space: nowrap;
+           margin-left: 297px;
+        }
+       }
+ }

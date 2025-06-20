@@ -25,5 +25,17 @@
     "merge-stream": "^2.0.0",
     "sass": "^1.57.1",
     "vinyl-buffer": "^1.0.1"
+  },
+  "homepage": "https://armytist.github.io/dev-Onebit",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

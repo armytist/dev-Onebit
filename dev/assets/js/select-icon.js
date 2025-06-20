@@ -55,3 +55,5 @@ const installNiceSelect2 = () => {
 
 
 document.querySelector('select') ? installNiceSelect2() : null
+
+  

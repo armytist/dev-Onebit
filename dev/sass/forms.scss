@@ -20,6 +20,8 @@ input {
     color: $titles;
     font-size: 20px;
     padding: 26.5px 30px;
+    transition: .3s;
+
     &::-webkit-outer-spin-button, 
     &::-webkit-inner-spin-button {
     display: none;
@@ -47,11 +49,6 @@ input {
     }
 }
 
-form {
-    padding: 0 12px;
-    max-width: 729px;
-} 
-
 .template-form {
     padding: 0 86px 0 12px;
     max-width: 803px;
@@ -73,7 +70,7 @@ form {
     }
 
     .btn-row {
-        margin-bottom: 40px;
+        margin-bottom: 40px 0;
         .btn {
             width: 100%;
         }
@@ -86,7 +83,7 @@ form {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        margin-top: 15px;
         font-size: 20px;
     }
 }
@@ -94,9 +91,6 @@ form {
 .page-login {
     .template-form {
         margin: 97px auto 100px 596px;
-        .template-form_title {
-            margin-bottom: 20px;
-        }
     }
 }
 

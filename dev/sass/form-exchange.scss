@@ -1,12 +1,12 @@
 .form-exchange {
     border-radius: 20px;
-    padding: 40px;
+    padding: 45px 40px 40px 40px;
     border: 1px solid $strokes;
-    max-width: 540px;
+    width: 540px;
     position: relative;
     background: $background;
 
-    .give {
+    .give { 
         margin-bottom: 30px;
     }
 
@@ -19,11 +19,11 @@
         border-radius: 12px;
         color: $titles;
         font-size: 24px;
-        padding: 35px;
+        padding: 36px;
         width: 100%;
         border: 1px solid $strokes;
-        gap: 15px;
         align-items: center;
+        gap: 15px;
     }
 
     label {
@@ -33,65 +33,57 @@
 
     input {
         border: none;
-        padding: 11.5px 30px;
-    }
-
-    .exchange-info {
-        list-style: none;
         padding: 0;
-        margin: 0 0 42px 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px; 
-    }
-    .exchange-info-item {
-        width: calc(50%-24px);
     }
 
     .btn-lg {
         width: 100%;
         font-size: 24px;
+        padding: 43px 94px 47px;
     }
    
 }
 
-
-
 .nice-select {
     border: 1px solid $strokes;
-    background-color: $system;
-    padding: 16px 20px;
-    height: 56px;
+    background: $system;
+    padding: 27px 20px;
     font-size: 18px;
     font-weight: 600;
     display: flex;
     align-items: center;
-    min-height: 201px;
+    max-height: 56px;
+    min-width: 201px;
+
     &:after {
         border-bottom: 2px solid $text;
         border-right: 2px solid $text;
         height: 10px;
-        right: 20%;
-        top: 50%;
         width: 10px;
+        right: 20px;
+        top: 50%;
         margin-top: -7px;
     }
 }
 
 .nice-select {
+
     .nice-select-dropdown {
         background: $system;
         border: 1px solid $strokes;
     } 
 
     .nice-select-search-box {
-        padding: 13px 24px;
+        padding: 17px 20px;
     }
 
     .nice-select-search {
         background-color: $system;
         border: 1px solid $text;
         color: $titles;
+
+        &:focus {}
+
     }
 
     .list {
@@ -109,7 +101,7 @@
 
     .option {
         display: flex;
-        gap: 32px;
+        gap: 12px;
         color: $titles;
         font-size: 18px;
         font-weight: 600;
@@ -136,13 +128,13 @@
 .exchange-info {
     list-style: none;
     padding: 0;
-    margin: 0 0 42px 0;
+    margin: 0 0 19px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 
     &-item {
-        width: calc(50%-24px);
+        width: calc(50% - 24px);
         text-decoration: none;
     }
 

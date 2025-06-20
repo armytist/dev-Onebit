@@ -6,6 +6,7 @@ header {
     &.fixed {
         backdrop-filter: blur(24.5px);
         background: transparent;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -67,6 +68,7 @@ header {
         align-items: center;
         justify-content: center;
         position: relative;
+        border-radius: 8px;
 
         &:before {
             content: "";
@@ -96,6 +98,8 @@ header {
         color: $country;
         font-weight: 600;
         font-size: 18px;
+        margin-bottom: 5px;
+        margin-right: -7px;
 
         &:after {
             transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
@@ -113,6 +117,7 @@ header {
         .nav-link {
             padding-left: 15px;
             padding-right: 15px;
+            font-size: 18px;
         }
     }
 }

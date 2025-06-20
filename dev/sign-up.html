@@ -1,5 +1,4 @@
 @@include('templates/head.html')
-@@include('templates/header.html')
 <main class="wrapper page-login">
     <div class="column-logo">
         <img src="assets/img/Group.svg" alt="logo">
@@ -14,12 +13,12 @@
         <h6 class="template-form_subtitle">Для успішного проходження реєстрації заповніть поля, вказані нижче</h6>
         <div class="input-row">
             <div class="input-box">
-                <label for="name">ім'я</label>
-                <input id="name" type="text">
+                <label for="name"></label>
+                <input id="name" type="text" placeholder="ім'я">
             </div>
             <div class="input-box">
-                <label for="lastname">прізвище</label>
-                <input id="lastname" type="text">
+                <label for="lastname"></label>
+                <input id="lastname" type="text" placeholder="прізвище">
             </div>
         </div>
         <div class="input-box">
@@ -27,12 +26,12 @@
             <input id="tel" type="tel" placeholder="+38(000)-000-0000">
         </div>
         <div class="input-box">
-            <label for="email">email</label>
-            <input id="email" type="email">
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="email">
         </div>
         <div class="input-box">
-            <label for="telegram">telegram</label>
-            <input id="telegram" type="text">
+            <label for="telegram"></label>
+            <input id="telegram" type="text" placeholder="telegram">
         </div>
         <div class="input-box">
             <label for="password"></label>
@@ -49,9 +48,9 @@
       </div>
       <div class="template-form__question">
         <div>вже маєте акаунт Onebit?
-            <a href="#">увійти</a></div>
+            <a href="sign-in.html">увійти</a></div>
       </div>
     </form>
 </main>
-@@include('templates/footer.html')
+@@include('templates/footer-assets.html')
  

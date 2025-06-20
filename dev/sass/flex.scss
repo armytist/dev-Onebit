@@ -1,0 +1,56 @@
+.flex {
+    .container {
+
+        .crypto-title {
+            margin-bottom: 80px;
+        }
+        .crypto-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.flex-start {
+                justify-content: flex-start;
+                margin-left: 245px;
+
+                &-fourth {
+                    justify-content: flex-start;
+                    margin-left: 123px;
+                }
+            }
+
+            &.flex-end {
+                justify-content: flex-end;
+
+                &-fifth {
+                    justify-content: flex-end;
+                    margin-right: 245px;
+                }
+            }
+            .flex-element {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $light-black;
+                border-radius: 15px;
+                padding: 38px 120px;
+                min-width: 353px;
+                max-height: 114px;
+                color: $titles;
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 30px;
+
+                &.margin-right {
+                    margin-right: 20px;
+                }
+            }
+    
+            .coin-png {
+                margin-right: 8px;
+            }
+        }
+          
+            
+        }
+    }

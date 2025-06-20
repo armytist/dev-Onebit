@@ -1,0 +1,33 @@
+.advantages {
+    .container {
+        margin-bottom: -8px;
+    }
+}
+
+.advantages-item {
+    background-color: $system;
+    border-radius: 15px;
+    display: flex;
+}
+
+.advantages-text {
+    padding: 40px;
+
+    h4 {
+        margin-bottom: 23px;
+        line-height: 1.16;
+    }
+
+    h6 {
+        font-weight: 400;
+        color: $text;
+    }
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+

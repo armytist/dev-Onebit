@@ -5,12 +5,10 @@ $(document).ready(function(){
     });
 })
 
-NiceSelect.bind(document.getElementById("choice-give-currency"))
-NiceSelect.bind(document.getElementById("choice-get-currency"))
 
-/*const btnHistoryBack= document.querySelector('#history-back');
-const backHistory =()=> window.history.back();
-btnHistoryBack.addEventListener('click', backHistory);*/
+// const btnHistoryBack = document.querySelector('#history-back');
+// const backHistory =()=>  window.history.back();
+// btnHistoryBack.addEventListener('click', backHistory)
 
 window.addEventListener("scroll", function() {
     const header = document.querySelector("header");
@@ -21,38 +19,34 @@ window.addEventListener("scroll", function() {
     }
 });
 
-const swiper = new swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-    // slidesPerView: 2,
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-   
-  });
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-const time = 23
-  let greeting;
+});
 
-  if (time < 3) {
-    greeting = "Good night!";
-  } else if (time < 11) {
-    greeting = "Good morning!"
-  } else if (time < 15) {
-    greeting = "Good day!"
-  } else if (time < 23) {
-    greeting = "Good evening";
-  } 
-console.log(greeting);
+const numbers = document.querySelectorAll('table .percent');
+
+numbers.forEach(number => {
+    if (number.textContent.startsWith('+')) {
+        number.classList.add('plus');
+    } else if (number.textContent.startsWith('-')) {
+        number.classList.add('minus');
+    }
+});
+
 
 
 
