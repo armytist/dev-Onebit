@@ -5,6 +5,7 @@ $(document).ready(function(){
     });
 })
 
+<<<<<<< HEAD
 
 // const btnHistoryBack = document.querySelector('#history-back');
 // const backHistory =()=>  window.history.back();
@@ -48,5 +49,10 @@ numbers.forEach(number => {
 });
 
 
+=======
+const btnHistoryBack= document.querySelector('#history-back');
+const backHistory =()=> window.history.back();
+btnHistoryBack.addEventListener('click', backHistory)
+>>>>>>> fdd0b32a17bd0ea2c58bae961da8429a572e9ea4
 
 
